@@ -1,0 +1,120 @@
+@charset "UTF=8";
+
+body{
+    /* bodyの余白をなくす */
+    padding: 0px;
+    margin: 0px;
+}
+/*-- ナビゲーションメニュー --*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 34px;
+    color: black;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+.home{
+    border: solid 1px black;
+    padding: 0px 20px;
+    margin-left: 20px;
+}
+/* メニューの余白 */
+.menu > a{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*-- メイン画像 --*/
+.mainvisual{
+    width: 100%;
+}
+img{
+    margin: o auto;
+    max-width: 100%;
+}
+/*-- ABOUT --*/
+.name{
+    font-size: 24px;
+    font-weight: bold;
+}
+h1{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 34px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+p{
+    font-size: 18px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+li{
+    font-size: 18px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+/* divの余白をなくす */
+div{
+    font-size: 0;
+}
+
+.about{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+/* 画像を丸く切り取る */
+.circle{
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: solid 3px #999;
+    padding: 3px;
+}
+.content{
+    margin: 0 auto;
+    padding-left: 40px;
+}
+/*-- works --*/
+.works{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto 20px auto;
+    max-width: 960px;
+}
+.item{
+    padding-bottom: 60px;
+    width: 25%;
+}
+.item_center{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*-- フッター --*/
+footer p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+/*---------------------------
+SP用レイアウト
+----------------------------*/
+@media (max-width: 767px){
+    .item{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
